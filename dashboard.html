@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1 class="text-3xl font-bold mb-6">Company Metrics</h1>
+        <div class="grid grid-cols-4 gap-4 mb-8" id="metrics-container">
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <div class="grid grid-cols-2 gap-4">
+            <div>
+                <h2 class="text-xl font-semibold mb-4">Revenue By Job Location</h2>
+                <canvas id="job-location-chart"></canvas>
+            </div>
+            <div>
+                <h2 class="text-xl font-semibold mb-4">Revenue By Job Type</h2>
+                <canvas id="job-type-chart"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>
